@@ -1,0 +1,15 @@
+/* core : reset - =========================================================================== - */
+*, *::before, *::after { box-sizing: border-box; }
+
+* { margin: 0; }
+
+body {
+  line-height: 1.5;
+  background-color: hsl(var(--neutral-2));
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+p, h2 { overflow-wrap: break-word; }

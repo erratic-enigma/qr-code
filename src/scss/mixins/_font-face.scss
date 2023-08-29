@@ -1,0 +1,7 @@
+// scss (mixin) : font face - =============================================================== - //
+@mixin define($family, $source, $weight) {
+  font-family: $family;
+  src: url(#{$source}) format('truetype');
+  font-display: swap;
+  font-weight: $weight;
+}

@@ -1,0 +1,16 @@
+/* layout : default, root - ================================================================= - */
+@use '@/scss/functions/converts' as convert;
+
+[data-layout='default'].l-root {
+  --grid-rows:
+    [main-start] 1fr
+    [footer-start] minmax(#{convert.rem(32px)}, auto)
+    [footer-end main-end]
+  ;
+
+  display: grid;
+  grid-template-rows: var(--grid-rows);
+  place-items: center;
+  width: 100%;
+  min-height: 100dvh;
+}

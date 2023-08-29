@@ -1,0 +1,16 @@
+/* core : font family - ===================================================================== - */
+@use '@/scss/mixins/font-face' as font-face;
+
+// interal variables -------------------------------------------------------------------------- //
+$_family: 'Outfit';
+$_url: '/outfit/';
+
+/* variable ----------------------------------------------------------------------------------- */
+@font-face { @include font-face.define('#{$_family} (Variable)', '#{$_url}variable.ttf', 400 700) };
+
+/* static ------------------------------------------------------------------------------------- */
+/* 400 */
+@font-face { @include font-face.define($_family, '#{$_url}regular.ttf', 400) };
+
+/* 700 */
+@font-face { @include font-face.define($_family, '#{$_url}bold.ttf', 700) };

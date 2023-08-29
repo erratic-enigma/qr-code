@@ -1,0 +1,14 @@
+/* core : root - ============================================================================ - */
+:root {
+  /* mono system fonts */
+  --font-mono: Menlo, Consolas, Monaco, 'Liberation Mono', 'Lucida Console', monospace;
+
+  /* colours (hsl) */
+  --colour-primary: 220 15% 55%;      // Light Slate Gray
+  --colour-primary-dark: 218 44% 22%; // Space Cadet
+  --colour-attributes: 228 45% 44%;   // Chinese Blue
+
+  /* neutrals (hsl) */
+  --neutral-1: 0 0% 100%;
+  --neutral-2: 212 45% 89%;
+}

@@ -1,0 +1,43 @@
+/* component : QR card - ==================================================================== - */
+@use 'sass:color';
+@use '@/scss/functions/converts' as convert;
+
+.qr-card {
+/* consistent --------------------------------------------------------------------------------- */
+  & {
+    --radius: 20px;
+    --padding: #{convert.rem(18px)};
+    --shadow: 0px 12px 32px -8px hsl(var(--colour-primary-dark) / 0.15);
+
+    display: flex;
+    flex-direction: column;
+    row-gap: convert.rem(16px);
+    border-radius: var(--radius);
+    padding: var(--padding) var(--padding) calc(var(--padding) + convert.rem(32px));
+    max-width: convert.rem(342px);
+    background-color: hsl(var(--neutral-1));
+    box-shadow: var(--shadow);
+    font-family: 'Outfit', sans-serif;
+    text-align: center;
+  }
+
+  > .code { border-radius: calc(var(--radius) - 8px); }
+
+  > .heading {
+    font-size: convert.rem(24px);
+    font-weight: 700;
+    color: hsl(var(--colour-primary-dark));
+  }
+
+  > .instructions {
+    max-width: calc(100% - convert.rem(16px));
+    font-size: convert.rem(16px);
+    font-weight: 400;
+    color: hsl(var(--colour-primary));
+  }
+
+/* dynamic ------------------------------------------------------------------------------------ */
+@supports (font-variation-settings: 'wdth' 0) {
+  & { font-family: 'Outfit (Variable)', sans-serif; }
+}
+}

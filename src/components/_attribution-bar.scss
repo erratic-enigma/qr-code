@@ -1,0 +1,14 @@
+/* component : attribution bar - ============================================================ - */
+@use '@/scss/functions/converts' as convert;
+
+.attribution-bar {
+  & {
+    font: convert.rem(12px) var(--font-mono);
+    text-align: center;
+  }
+
+  > .link:link {
+    text-decoration: none;
+    color: hsl(var(--colour-attributes));
+  }
+}
