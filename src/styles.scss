@@ -1,0 +1,11 @@
+// styles - ================================================================================= - //
+@use '@/core/font-family';
+@use '@/core/variables';
+@use '@/core/reset';
+
+@use '@/layout/root';
+@use '@/layout/main';
+@use '@/layout/footer';
+
+@use '@/components/attribution-bar';
+@use '@/components/qr-card';
